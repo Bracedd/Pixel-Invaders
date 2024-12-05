@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Invaders: Chaos Edition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="game-title">PIXEL INVADERS: CHAOS EDITION</h1>
+        <div class="screen-container">
+            <div class="crt-effect">
+                <canvas id="gameCanvas"></canvas>
+            </div>
+        </div>
+        <div class="game-info">
+            <p class="score">SCORE: <span id="scoreValue">0</span></p>
+            <p class="lives">LIVES: <span id="livesValue">3</span></p>
+            <p class="timer">TIME: <span id="timerValue">0</span></p>
+        </div>
+        <div id="startScreen" class="start-screen">
+            <h2>HOW TO PLAY</h2>
+            <p>DEFEND EARTH FROM CHAOTIC INVADERS!</p>
+            <ul class="rules">
+                <li>MOVE: LEFT/RIGHT ARROWS</li>
+                <li>SHOOT: SPACEBAR</li>
+                <li>SURVIVE WAVES OF ALIENS</li>
+                <li>BEWARE OF ALIEN POWERS!</li>
+            </ul>
+            <p>SELECT MODE:</p>
+            <button id="slowMode">SLOW</button>
+            <button id="fastMode">FAST</button>
+            <button id="frenzyMode">FRENZY</button>
+        </div>
+        <div id="gameOverScreen" class="game-over">
+            <p>GAME OVER</p>
+            <p>SCORE: <span id="finalScore">0</span></p>
+            <p>TIME: <span id="finalTime">0</span></p>
+            <p>PRESS SPACE TO RESTART</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
